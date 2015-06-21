@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Application Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="Resources/css/Site.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <!--external css-->
+        <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+        <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+        <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">    
+
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+        <script src="assets/js/chart-master/Chart.js"></script>
+
+        <script src="Resources/Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <link href="Resources/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="Resources/assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="Resources/assets/css/to-do.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.sparkline.js"></script>
+
+
+        <!--common script for all pages-->
+        <script src="assets/js/common-scripts.js"></script>
+
+        <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+        <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+
+        <!--script for this page-->
+        <script src="assets/js/sparkline-chart.js"></script>    
+        <script src="assets/js/zabuto_calendar.js"></script>	
+    </head>
+    <body>
+        <section id="container" >
+            <!-- **********************************************************************************************************************************************************
+            TOP BAR CONTENT & NOTIFICATIONS
+            *********************************************************************************************************************************************************** -->
+            <!--header start-->
+            <header class="header black-bg">
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+                </div>
+                <!--logo start-->
+                <a href="admintheme.php" class="logo"><b>Northwest Missouri State University</b></a>
+                <!--logo end-->
+
+                <div class="top-menu">
+                    <ul class="nav pull-right top-menu">
+                        <li><a class="logout" href="index.php">Logout</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--header end-->
+
+            <!-- **********************************************************************************************************************************************************
+            MAIN SIDEBAR MENU
+            *********************************************************************************************************************************************************** -->
+            <!--sidebar start-->
+            <aside>
+                <div id="sidebar"  class="nav-collapse ">
+                    <!-- sidebar menu start-->
+                    <ul class="sidebar-menu" id="nav-accordion">
+                        <li class="sub-menu">
+                            <a href="ApplicationForm.html" >
+                                <i class="fa fa-cogs"></i>
+                                <span>Application Form</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#" >
+                                <i class="fa fa-list-alt"></i>
+                                <span>Review By GA</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a  href="ReviewByGA.html"><i class="fa fa-files-o"></i><span>To be Reviewed by GA</span></a></li>
+                                <li><a  href="StudentInfoForGA.html"><i class="fa fa-files-o"></i><span>Student Info For GA</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#" >
+                                <i class="fa fa-recycle"></i>
+                                <span>Review By ACS</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a  href="ReviewByACSDepartment.html"><i class="fa fa-users"></i><span>To be Reviewed by ACS</span></a></li>
+                                <li><a  href="StudentInfoForACS.html"><i class="fa fa-files-o"></i><span>Student Info For ACS</span></a></li>
+                                <li><a  href="Reviewed.html"><i class="fa fa-edit"></i><span>Reviewed</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="FinalForm.html" >
+                                <i class="fa fa-cogs"></i>
+                                <span>Final Form</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- sidebar menu end-->
+                </div>
+            </aside>
+            <!--sidebar end-->
+
+            <!-- **********************************************************************************************************************************************************
+            MAIN CONTENT
+            *********************************************************************************************************************************************************** -->
+            <!--main content start-->
+            <section id="main-content">
+                <section class="wrapper">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-lg-11 col-lg-offset-1 main-chart">
+                                <form style="font-size: medium">
+                                    <table class="table table-bordered table-responsive table-hover table-striped" style="width:60%">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th >Student Key</th>
+                                                <th >Status</th>
+                                                <th >Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>123456</td>
+                                                <td><input type="submit" value="New" id="btnNew" class="btn btn-primary"/></td>
+                                                <td>Approved</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div><!-- /col-lg-12 END SECTION MIDDLE -->
+                        </div><! --/row -->
+                </section>
+            </section>
+
+            <!--main content end-->
+            <!--footer start-->
+            <!--            <footer class="site-footer">
+                            <div class="text-center">
+                                Northwest Missouri State University
+                                <a href="admintheme.php" class="go-top">
+                                    <i class="fa fa-angle-up"></i>
+                                </a>
+                            </div>
+                        </footer>-->
+            <!--footer end-->
+        </section>
+    </body>
+</html>
